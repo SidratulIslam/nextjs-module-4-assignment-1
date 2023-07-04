@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .container {
+      margin-top: 20px;
+    }
+    .cart-item {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Product List</h2>
+        <div id="product-list">
+          <!-- Products will be dynamically added here -->
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h2>Shopping Cart</h2>
+        <div id="cart-items">
+          <!-- Cart items will be dynamically added here -->
+        </div>
+        <div>
+            <label for="discount-input">Discount:</label>
+            <input type="number" id="discount-input" class="form-control" min="0">
+            <button id="discount-apply-button" class="btn btn-primary mt-2">Apply Discount</button>
+        </div>
+        <button id="clear-cart" class="btn btn-danger mt-2 text-end">Clear Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="product.js"></script>
+  <script type="module" src="cart.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

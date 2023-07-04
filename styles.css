@@ -1,0 +1,15 @@
+/* styles.css */
+
+.container {
+    max-width: 800px;
+  }
+  
+  .card {
+    width: 100%;
+  }
+  
+  #clear-cart {
+    display: block;
+    margin-left: auto;
+  }
+  
